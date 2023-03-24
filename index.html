@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>Calculadora Vimax</header>
+
+      <main>
+        <label
+          >Tipo:
+          <select>
+            <option>Ondulação Simples</option>
+            <option>Ondulação Plana</option>
+            <option>Pneumática</option>
+            <option>Venomax</option>
+          </select>
+        </label>
+
+        <label
+          >Acabamento:
+          <select>
+            <option>Gancho Simples</option>
+            <option>Gancho Simples Invertido</option>
+            <option>Gancho e Capa</option>
+            <option>Gancho com frio soldado nas pontas</option>
+            <option>Outros...</option>
+          </select>
+        </label>
+
+        <label
+          >Malha:
+          <input type="number" />
+        </label>
+
+        <label
+          >Fio:
+          <input type="number" />
+        </label>
+
+        <label
+          >Comprimento:
+          <input type="number" />
+        </label>
+
+        <label
+          >Largura:
+          <input type="number" />
+        </label>
+
+        <label
+          >Quantia de peças:
+          <input type="number" />
+        </label>
+
+        <button>Calcular</button>
+
+        <section>
+          <img src="./assets/ond-simples_resized.png" alt="ondulação" />
+
+          <div class="medida">
+            <p>1600</p>
+            <p>C</p>
+          </div>
+          <div class="medida">
+            <p>1200</p>
+            <p>L</p>
+          </div>
+
+          <div class="dados">
+            <p>Puxada: 9,00 metros - 83 fios</p>
+
+            <p>Passo: 29,00</p>
+
+            <p>Vão Livre: 1200</p>
+            <p>Gancho Simples</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="./scripts.js"></script>
+</html>
