@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Calculadora</title>
   </head>
   <body>
@@ -17,7 +20,7 @@
       <main>
         <label
           >Tipo:
-          <select>
+          <select id="tela">
             <option>Ondulação Simples</option>
             <option>Ondulação Plana</option>
             <option>Pneumática</option>
@@ -27,61 +30,62 @@
 
         <label
           >Acabamento:
-          <select>
+          <select id="acab">
             <option>Gancho Simples</option>
             <option>Gancho Simples Invertido</option>
             <option>Gancho e Capa</option>
-            <option>Gancho com frio soldado nas pontas</option>
+            <option>Gancho com fio soldado nas pontas</option>
             <option>Outros...</option>
           </select>
         </label>
 
         <label
           >Malha:
-          <input type="number" />
+          <input id="input-malha" type="number" />
         </label>
 
         <label
           >Fio:
-          <input type="number" />
+          <input id="input-fio" type="number" />
         </label>
 
         <label
           >Comprimento:
-          <input type="number" />
+          <input id="input-comprimento" type="number" />
         </label>
 
         <label
           >Largura:
-          <input type="number" />
+          <input id="input-largura" type="number" />
         </label>
 
         <label
           >Quantia de peças:
-          <input type="number" />
+          <input id="input-pecas" type="number" />
         </label>
 
-        <button>Calcular</button>
+        <button id="calculator-button">Calcular</button>
 
         <section>
-          <img src="./assets/ond-simples_resized.png" alt="ondulação" />
+          <div class="image">
+            <img src="./assets/ond-simples_resized.png" alt="ondulação" />
+          </div>
 
           <div class="medida">
-            <p>1600</p>
-            <p>C</p>
-          </div>
-          <div class="medida">
-            <p>1200</p>
-            <p>L</p>
+            <p id="valorComprimento">1600 C</p>
+
+            <p id="valorLargura">1200 L</p>
           </div>
 
           <div class="dados">
-            <p>Puxada: 9,00 metros - 83 fios</p>
+            <p id="puxada">Puxada: 9,00 metros - 83 fios</p>
 
-            <p>Passo: 29,00</p>
+            <p id="passo">Passo: 29,00</p>
+          </div> 
 
-            <p>Vão Livre: 1200</p>
-            <p>Gancho Simples</p>
+          <div class="dados">
+            <p id="vaoLivre">Vão Livre: 1200</p>
+            <p id="acabamento">Gancho Simples</p>
           </div>
         </section>
       </main>
